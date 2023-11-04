@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@700&family=PT+Sans:wght@400;700&family=Prompt:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body class="m-0 p-0 flex">
+      <div class="bg-black text-white w-6/12 h-[100vh] overflow-hidden">
+        <div class="text-section m-10">
+          <h1 class="text-slate-600 text-5xl font-bold">
+            Post Office Application
+          </h1>
+          <p class="font-extralight text-2xl mt-4">
+            This Application Allows you to extract information about the nearest
+            Post Offices, based on your location.
+          </p>
+        </div>
+        <div class="image-container mt-36 ">
+          <img src="undraw_messenger_re_8bky.svg" class="image h-[80%]"/>
+        </div>
+      </div>
+      <div class="bg-slate-500  w-6/12 flex flex-col justify-center items-center text-2xl font-extrabold">
+        <p class="text-gray-400">Your Current IP Address is <span class="text-white font-semibold" id="ipAddress"></span></p>
+        <button class="text-gray-100 rounded-md border-2 border-gray-00 font-normal mt-5 w-9/12 py-3" id="getStarted">Get Started</button>
+      </div>
+      <script src="script.js"></script>
+  </body>
+</html>
+

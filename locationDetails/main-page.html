@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Your Current Location</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black overflow-x-hidden p-0 m-0">
+    <div class="m-16" id="info-container">
+      <div class="current-location-IP text-2xl font-extrabold">
+        <p class="text-gray-400 font-bold" id="currentIP">
+        </p>
+      </div>
+      <div class="grid grid-cols-3 mt-10" id="user-info">
+        <div id="lat-long">
+          
+        </div>
+        <div id="city-region">
+          
+        </div>
+        <div id="org-hostname">
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="location "
+      class="bg-slate-800 w-[100vw] flex flex-col justify-center items-center box-border pb-10"
+    >
+      <h1 class="text-slate-300 text-3xl font-bold p-6">
+        Your Current Location
+      </h1>
+      <iframe
+        id="map"
+        class="py-5"
+        width="960"
+        height="470"
+        frameborder="0"
+        style="border: 0"
+      ></iframe>
+    </div>
+    <div class="more-information flex justify-center w-[100vw]">
+      <h1 class="py-5 text-slate-300 text-3xl font-bold">
+        More Information About You
+      </h1>
+    </div>
+    <div id="time-zone" class="ml-16 pt-3 w-[100vw]">
+
+    </div>
+    <div
+      class="post-offices text-slate-300 flex flex-col justify-center items-center mx-auto my-5 w-[100vw]"
+    >
+      <h1 class="text-3xl font-bold mb-10">Post Offices Near You</h1>
+      <div
+
+        class="search-bar w-10/12 rounded-md border-2 border-slate-600 flex p-2"
+      >
+        <span class="material-symbols-outlined"> search </span>
+        <input
+        id="search-post-office"
+          type="text"
+          placeholder="Search By Name"
+          class="outline-none bg-transparent pl-3"
+        />
+      </div>
+    </div>
+    <div class="cards-container text-xl font-bold pb-10 pt-5">
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

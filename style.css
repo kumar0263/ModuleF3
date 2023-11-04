@@ -1,0 +1,13 @@
+p{
+    font-family: 'inter';
+}
+.image{
+    margin-inline: auto;
+}
+h1{
+   font-family: 'Montserrat';
+}
+.image-container{
+    width: 50%;
+    margin-inline: auto;
+}
